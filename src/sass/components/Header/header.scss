@@ -1,0 +1,88 @@
+@import '../../utils/variables.scss';
+
+*{
+    font-family: $secondary-font;
+}
+
+.header-first {
+    display: flex; 
+margin-top: 30px; 
+justify-content: center; 
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+
+.header-second{
+    display: flex; 
+justify-content: space-between; 
+width: 100%; 
+max-width: 90%; 
+}
+
+.header-third{
+    display: flex; 
+flex-direction: row; 
+column-gap: 1.5rem; 
+}
+
+.header-li{
+    display: flex; 
+column-gap: 0.5rem; 
+align-items: center; 
+}
+
+.header-login{
+    display: flex; 
+column-gap: 10px; 
+justify-content: space-between; 
+align-items: center; 
+color: $secondary-color;
+button{
+    background: none;
+    border: none;  
+    align-items: center;
+}
+.btn-search{
+    display: flex;
+    align-items: center;
+}
+
+}
+
+.login-btn{
+    font-weight: 700;
+    background: none;
+    border: none;
+    color: $secondary-color;
+    background: none;
+    border: none;
+    font-size: 14px;
+    line-height: 24px;
+    font-family:$secondary-font !important; 
+
+}
+
+.login-btn:hover{
+
+    font-weight: 800;
+    transition: 0.3s;
+}
+
+
+
+.btn-icon{
+    display: flex; 
+column-gap: 0.25rem; 
+align-items: center; 
+color: $secondary-color;  
+background: none;
+border: none;  
+}
+
+nav ul li:hover {
+font-weight: 700;
+transition: 0.3s;
+}
+

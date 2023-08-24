@@ -1,0 +1,61 @@
+@import "../../../utils/variables.scss";
+
+.pow-main {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+.pow-parent {
+  position: relative;
+}
+
+.pow-desc {
+  background: rgba(45, 139, 192, 0.75);
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 50px;
+  position: absolute;
+  bottom: 3px;
+  height: 55%;
+  width: 68%;
+  gap: 20px;
+  button {
+    border: 1px solid white;
+    background: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 15px 40px;
+    max-width: fit-content;
+    font-weight: 700;
+  }
+
+  p {
+    font-weight: 700;
+  }
+
+  .pone {
+    font-size: 26px;
+    width: 200px;
+  }
+}
+
+.pow1 {
+  position: relative;
+  bottom: 0;
+
+  .pow-desc {
+    height: 45% !important;
+    width: 60% !important;
+  }
+}
+
+.pow2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

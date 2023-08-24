@@ -1,0 +1,36 @@
+@import "../../utils/variables.scss";
+
+.product-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  img {
+    width: 183px;
+    height: 238px;
+  }
+
+  img:hover {
+    transform: scale(1.1);
+    transition: all ease-in-out 0.5s;
+  }
+
+  .product-price {
+    display: flex;
+    gap: 5px;
+    .firtp {
+      color: #bdbdbd;
+
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 26px;
+    }
+    .secondp {
+      color: #004e7c;
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 26px;
+    }
+  }
+}

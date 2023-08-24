@@ -1,0 +1,76 @@
+@import "../../../utils/variables.scss";
+
+.banner-first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.banner-second {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 85%;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #96e9fb 0%, #abecd6 100%);
+}
+
+.banner-third {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 70px;
+}
+
+.summer-text {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  color: $text-second-color;
+}
+
+.special-text {
+  font-size: 80px;
+  line-height: 90px;
+  font-weight: 800;
+  color: $primary-color;
+}
+
+.text-lighty {
+  color: $text-color;
+  width: 60%;
+  line-height: 21px;
+}
+
+.btn-shop {
+  border-radius: 5px;
+  padding: 15px;
+  background-color: $secondary-color;
+  color: white;
+  border: none;
+  width: 40%;
+  cursor: pointer;
+  font-weight: 700;
+  border: 1px solid $secondary-color;
+}
+
+.btn-shop:hover {
+  background-color: white;
+  color: $secondary-color;
+  transition: 0.3s;
+}
+
+.donut {
+  position: relative;
+  right: -97px;
+
+  img {
+    width: 689px;
+  }
+
+  img:hover {
+    transform: scale(1.1);
+    transition: all ease-in-out 0.5s;
+  }
+}

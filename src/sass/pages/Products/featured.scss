@@ -1,0 +1,58 @@
+@import "../../utils/variables.scss";
+
+.featured {
+  display: flex;
+  align-items: center;
+  margin-top: 150px !important;
+
+  .img-wrappers {
+    display: flex;
+    gap: 10px;
+    flex: 1;
+    img:nth-child(1) {
+      width: 217px;
+      height: 498px;
+      
+    }
+    img:nth-child(2) {
+      width: 280px;
+      height: 498px;
+    }
+
+    img:nth-child(1):hover {
+      transform: scale(1.2);
+      transition:ease-in-out 0.5s;
+      
+    }
+    img:nth-child(2):hover {
+      transform: scale(1.1);
+      transition:ease-in-out 0.5s;
+      
+    }
+  }
+
+  .featext {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 20px;
+    .subtitle {
+      color: $secondary-color;
+      font-size: 17px;
+      font-weight: 700;
+    }
+    .title {
+      color: $primary-color;
+      font-weight: 800px;
+      font-size: 44px;
+    }
+
+    .text {
+      width: 340px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      color: $text-color;
+    }
+  }
+}

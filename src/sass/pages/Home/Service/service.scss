@@ -1,0 +1,48 @@
+@import "../../../../sass/utils/variables.scss";
+.service {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  .title-products {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .p1 {
+      color: $text-color;
+      font-weight: 700;
+      font-size: 20px;
+    }
+    .p2 {
+      color: $primary-color;
+      font-weight: 700;
+      font-size: 26px;
+    }
+
+    .p3 {
+      color: $text-color;
+    }
+  }
+  .service-cards {
+    display: flex;
+    justify-content: space-around;
+    .service-card {
+      max-width: 230px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      .text {
+        text-align: center;
+        color: $text-color;
+      }
+      .title {
+        font-family: "Montserrat", sans-serif !important ;
+        font-weight: 700;
+        font-size: 24px;
+        color: $primary-color;
+      }
+    }
+  }
+}

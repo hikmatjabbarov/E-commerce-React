@@ -1,0 +1,14 @@
+@import "./utils/font.scss";
+@import "./utils/variables.scss";
+@import "./utils/reset.scss";
+@import "./components/Header/advertbar.scss";
+@import "./components/Header/header.scss";
+@import "./pages/Home/Posts/post.scss" ;
+* {
+  font-family: $main-font;
+}
+
+.container {
+  max-width: 85%;
+  margin: 0 auto;
+}

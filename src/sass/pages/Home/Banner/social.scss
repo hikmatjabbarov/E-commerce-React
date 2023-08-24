@@ -1,0 +1,32 @@
+@import "../../../utils/variables.scss";
+
+.social-container {
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  height: 142px;
+  margin-top: 72px;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 79%;
+
+  .social-tag {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .social-btn {
+      cursor: pointer;
+      background: none;
+    }
+
+    .social-btn:hover {
+      transform: scale(1.1);
+      transition: 0.5s;
+    }
+  }
+}
