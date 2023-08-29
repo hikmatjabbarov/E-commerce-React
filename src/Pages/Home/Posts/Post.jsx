@@ -2,8 +2,7 @@ import React from "react";
 import "../../../sass/pages/Home/Posts/post.scss";
 import Favorite from "../../../assets/favorite.jpg";
 import Look from "../../../assets/look.svg";
-import Cart from "../../../assets/Cart.svg";
-
+import Cart from "../../../assets/cart.svg";
 
 const Post = ({ src }) => {
   return (
@@ -52,7 +51,7 @@ const Post = ({ src }) => {
           We focus on ergonomics and meeting you where you work. It's only a
           keystroke away.
         </p>
-        <p className="post-sales">
+        <div className="post-sales">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="17"
@@ -82,7 +81,7 @@ const Post = ({ src }) => {
             </defs>
           </svg>
           15 Sales
-        </p>
+        </div>
         <div className="post-price">
           <p className="firstp">$16.48</p>
           <p className="secondp">$6.48</p>
