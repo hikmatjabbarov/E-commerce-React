@@ -4,15 +4,16 @@
   display: flex;
   align-items: center;
   margin-top: 150px !important;
+  gap: 90px;
+  justify-content: space-between;
 
   .img-wrappers {
     display: flex;
     gap: 10px;
-    flex: 1;
+
     img:nth-child(1) {
       width: 217px;
       height: 498px;
-      
     }
     img:nth-child(2) {
       width: 280px;
@@ -20,14 +21,12 @@
     }
 
     img:nth-child(1):hover {
-      transform: scale(1.2);
-      transition:ease-in-out 0.5s;
-      
+      transform: scale(1.05);
+      transition: ease-in-out 0.5s;
     }
     img:nth-child(2):hover {
-      transform: scale(1.1);
-      transition:ease-in-out 0.5s;
-      
+      transform: scale(1.05);
+      transition: ease-in-out 0.5s;
     }
   }
 
@@ -36,6 +35,8 @@
     flex-direction: column;
     flex: 1;
     gap: 20px;
+    font-family: $main-font;
+
     .subtitle {
       color: $secondary-color;
       font-size: 17px;
@@ -45,6 +46,7 @@
       color: $primary-color;
       font-weight: 800px;
       font-size: 44px;
+      width: 500px;
     }
 
     .text {

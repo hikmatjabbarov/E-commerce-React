@@ -1,0 +1,23 @@
+@import "../utils/font.scss";
+@import "../utils/variables.scss";
+@import "../utils/reset.scss";
+@import "../components/Header/advertbar.scss";
+@import "../components/Header/header.scss";
+@import "../pages/Home/Posts/post.scss";
+@import "../components/Logo/logo.scss";
+@import "../pages/Home/Banner/banner.scss";
+@import "../pages/Home/Banner/partner.scss";
+@import "../pages/Home/Banner/pow.scss";
+@import "../pages/Home/Banner/social.scss";
+@import "../pages/Products/card.scss";
+@import "../pages/Products/featured.scss";
+@import "../pages/Products/products.scss";
+
+* {
+  font-family: $main-font;
+}
+
+.container {
+  max-width: 85%;
+  margin: 0 auto;
+}

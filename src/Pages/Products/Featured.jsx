@@ -5,7 +5,7 @@ import Featured2 from "../../assets/featured2.jpg";
 
 const Featured = () => {
   return (
-    <div className="featured container">
+    <div className="featured">
       <div className="img-wrappers">
         <img src={Featured1} alt="Featured1" />
         <img src={Featured2} alt="Featured2" />
@@ -15,8 +15,8 @@ const Featured = () => {
         <h6 className="title">We love what we do</h6>
         <div className="text">
           <p>
-          Problems trying to resolve the conflict between the two major realms
-          of Classical physics: Newtonian mechanics.
+            Problems trying to resolve the conflict between the two major realms
+            of Classical physics: Newtonian mechanics.
           </p>
           <p>
             Problems trying to resolve the conflict between the two major realms

@@ -8,7 +8,7 @@
 
   .img-wrapper:hover .icon-wrapper {
     transition: ease-in-out 5s;
-   
+
     left: 10%;
     bottom: 24px;
   }
@@ -95,6 +95,57 @@
     .product-color {
       display: flex;
       gap: 7px;
+
+      .pro-red {
+        border-radius: 50%;
+        background-color: rgba(183, 50, 37, 1);
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+      }
+      .pro-green {
+        border-radius: 50%;
+        background-color: #004e7c;
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+      }
+      .pro-orange {
+        border-radius: 50%;
+        background-color: #e77c40;
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+      }
+      .pro-black {
+        border-radius: 50%;
+        background-color: #252b42;
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+      }
+
+      .pro-red:hover {
+        border-radius: 100%;
+        transform: scale(1.05);
+        transition: 0.5s;
+      }
+
+      .pro-green:hover {
+        border-radius: 100%;
+        transform: scale(1.05);
+        transition: 0.5s;
+      }
+      .pro-orange:hover {
+        border-radius: 100%;
+        transform: scale(1.05);
+        transition: 0.5s;
+      }
+      .pro-black:hover {
+        border-radius: 100%;
+        transform: scale(1.05);
+        transition: 0.5s;
+      }
     }
 
     .frame-product {
@@ -103,12 +154,9 @@
       p {
         display: flex;
         gap: 5px;
-        .text-frame {
-          color: $text-color;
-        }
       }
     }
-    button {
+    .frame-btn {
       background: none;
       color: $secondary-color;
       font-weight: 700;
@@ -121,7 +169,7 @@
       gap: 10px;
     }
 
-    button:hover {
+    .frame-btn:hover {
       background-color: $secondary-color;
       border: 1px solid $secondary-color;
       color: white;
@@ -145,5 +193,13 @@
     font-weight: 700;
     font-size: 17px;
     line-height: 26px;
+  }
+}
+
+.details {
+  display: flex;
+  gap: 5px;
+  .text-frame {
+    color: $text-color;
   }
 }

@@ -1,0 +1,29 @@
+@import "../../../utils/variables.scss";
+.main-best {
+  background-color: #fafafa;
+  .bestseller {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(274px, 0fr));
+    grid-row-gap: 60px;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 24px;
+  }
+
+  .titlebestseller {
+    padding-top: 48px;
+    border-bottom: 1px solid #ececec;
+    h1 {
+      color: $primary-color;
+      font-size: 26px;
+      padding-bottom: 24px;
+    }
+    width: 72%;
+    display: flex;
+
+    margin: 0 auto;
+  }
+
+ 
+}

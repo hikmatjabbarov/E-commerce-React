@@ -10,24 +10,25 @@ import Posts from "./Posts/Posts";
 import Social from "./Banner/Social";
 import Footer from "../../components/Footer/Footer";
 import { Copy } from "../../components/Footer/Copy";
-
+import Featured from "../Products/Featured";
+import "../../sass/index/index.scss";
 const Home = () => {
   return (
     <div>
       <Advertbar />
       <Header />
       <Banner />
-      <Partner />
+      <Partner variant="white" />
       <Pow />
       <Products />
       <div className="container">
+        <Featured />
         <Service />
         <Posts />
-        
       </div>
       <Social />
-      <Footer/>
-      <Copy/>
+      <Footer />
+      <Copy />
     </div>
   );
 };

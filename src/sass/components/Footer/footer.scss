@@ -2,7 +2,7 @@
 
 .footer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   margin-top: 55px !important;
 
@@ -22,8 +22,9 @@
       color: $text-color;
 
       li:hover{
-        font-weight: 700;
+        color: #181515;
         cursor: pointer;
+        
       }
     }
   }

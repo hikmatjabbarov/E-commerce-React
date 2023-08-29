@@ -1,0 +1,75 @@
+@import "../../utils/variables.scss";
+
+.proabout {
+  width: 90%;
+  margin: 0 auto;
+
+  .compoabout {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+    flex: 1;
+    justify-content: center;
+
+    .abouttext {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      h1 {
+        font-size: 26px;
+        font-weight: 700;
+        color: $primary-color;
+      }
+      .textfirst {
+        color: $text-color;
+        width: 500px;
+        line-height: 22px;
+      }
+      .textsecond {
+        color: $text-color;
+        border-left: 3px solid #004e7c;
+        padding-left: 24px;
+        width: 500px;
+        line-height: 22px;
+      }
+      .textthird {
+        color: $text-color;
+        width: 500px;
+        line-height: 22px;
+      }
+    }
+  }
+
+  .descabout {
+    display: flex;
+    gap: 50px;
+    margin-top: 34px;
+    justify-content: center;
+    border-bottom: 1px solid #ececec;
+    padding-bottom: 30px;
+
+    .onedesc {
+      font-weight: 600;
+      color: $text-color;
+    }
+    .seconddesc {
+      font-weight: 400;
+      color: $text-color;
+    }
+    .thirddesc {
+      font-weight: 400;
+      color: $text-color;
+      span {
+        color: #004e7c;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.aboutimg {
+  img {
+    width: 413px;
+    height: 372px;
+  }
+}

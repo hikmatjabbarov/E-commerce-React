@@ -1,0 +1,49 @@
+@import "../../../utils/variables.scss";
+.static-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-product {
+  display: flex;
+  justify-content: center;
+}
+
+.product-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .showing {
+    font-weight: 700;
+    color: $text-color;
+  }
+
+  .view {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+    .views {
+      font-weight: 700;
+      color: $text-color;
+    }
+
+    .filter-icon {
+      padding: 15px;
+      border: 1px solid #ececec;
+      display: flex;
+      align-items: center;
+      border-radius: 5px;
+    }
+  }
+}
+
+.select-pop {
+  display: flex;
+  padding: 11px 29.008px 11px 18px;
+  border: 1px solid #ececec;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}

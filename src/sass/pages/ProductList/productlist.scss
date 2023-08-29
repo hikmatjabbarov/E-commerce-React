@@ -1,0 +1,67 @@
+@import "../../utils/variables.scss";
+
+.product-list {
+  width: 100%;
+}
+
+.card-display {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-row-gap: 60px;
+}
+
+.separating {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 90px;
+}
+.procontainer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.card-back {
+  background-color: #fafafa;
+  height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.procard {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
+  background-color: #fafafa;
+}
+
+.subtitle-shop {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+
+  .title-tag {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+    .title-home {
+      font-size: 14px;
+      font-weight: 400;
+      color: $primary-color;
+    }
+
+    .title-shop {
+      font-weight: 700;
+      color: #bdbdbd;
+    }
+  }
+
+  .shopdiv {
+    font-weight: 700;
+    color: $primary-color;
+    font-size: 26px;
+  }
+}

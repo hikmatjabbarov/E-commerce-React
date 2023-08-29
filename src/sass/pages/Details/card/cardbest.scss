@@ -1,0 +1,26 @@
+@import "../../../utils/variables.scss";
+
+.card {
+  background-color: white;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+
+  .product-content {
+    padding-bottom: 35px;
+    gap: 10px;
+
+    .subtitle {
+      font-weight: 400;
+      font-size: 14px;
+      color: $text-color;
+    }
+  }
+}
+.card-pic {
+  img {
+    width: 239px;
+    height: 280px;
+    flex-shrink: 1;
+  }
+}

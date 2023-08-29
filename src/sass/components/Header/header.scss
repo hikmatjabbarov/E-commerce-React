@@ -1,8 +1,8 @@
 @import '../../utils/variables.scss';
 
-*{
-    font-family: $secondary-font;
-}
+// *{
+//     font-family: $secondary-font;
+// }
 
 .header-first {
     display: flex; 
@@ -25,12 +25,14 @@ max-width: 90%;
     display: flex; 
 flex-direction: row; 
 column-gap: 1.5rem; 
+
 }
 
 .header-li{
     display: flex; 
 column-gap: 0.5rem; 
 align-items: center; 
+
 }
 
 .header-login{

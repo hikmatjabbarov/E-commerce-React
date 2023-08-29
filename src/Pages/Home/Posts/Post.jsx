@@ -14,15 +14,15 @@ const Post = ({ src }) => {
           <button className="sale-icon">Sale</button>
         </div>
         <div className="icon-wrapper">
-          <p>
+          <div>
             <img src={Favorite} alt="favorite" />
-          </p>
-          <p>
+          </div>
+          <div>
             <img src={Look} alt="look" />
-          </p>
-          <p>
-            <img src={Cart} alt="" />
-          </p>
+          </div>
+          <div>
+            <img src={Cart} alt="cart" />
+          </div>
         </div>
       </div>
       <div className="post-content">
@@ -60,7 +60,7 @@ const Post = ({ src }) => {
             viewBox="0 0 17 16"
             fill="none"
           >
-            <g clip-path="url(#clip0_4930_111)">
+            <g clipPath="url(#clip0_4930_111)">
               <path
                 d="M1 9.8999C1.13261 9.8999 1.25979 9.95258 1.35355 10.0463C1.44732 10.1401 1.5 10.2673 1.5 10.3999V12.8999C1.5 13.1651 1.60536 13.4195 1.79289 13.607C1.98043 13.7945 2.23478 13.8999 2.5 13.8999H14.5C14.7652 13.8999 15.0196 13.7945 15.2071 13.607C15.3946 13.4195 15.5 13.1651 15.5 12.8999V10.3999C15.5 10.2673 15.5527 10.1401 15.6464 10.0463C15.7402 9.95258 15.8674 9.8999 16 9.8999C16.1326 9.8999 16.2598 9.95258 16.3536 10.0463C16.4473 10.1401 16.5 10.2673 16.5 10.3999V12.8999C16.5 13.4303 16.2893 13.939 15.9142 14.3141C15.5391 14.6892 15.0304 14.8999 14.5 14.8999H2.5C1.96957 14.8999 1.46086 14.6892 1.08579 14.3141C0.710714 13.939 0.5 13.4303 0.5 12.8999V10.3999C0.5 10.2673 0.552678 10.1401 0.646447 10.0463C0.740215 9.95258 0.867392 9.8999 1 9.8999Z"
                 fill="#737373"
@@ -87,54 +87,14 @@ const Post = ({ src }) => {
           <p className="firstp">$16.48</p>
           <p className="secondp">$6.48</p>
         </div>
-        <p className="product-color">
-          <span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="17"
-              height="16"
-              viewBox="0 0 17 16"
-              fill="none"
-            >
-              <circle cx="8.5" cy="8" r="8" fill="#B73225" />
-            </svg>
-          </span>
-          <span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="17"
-              height="16"
-              viewBox="0 0 17 16"
-              fill="none"
-            >
-              <circle cx="8.5769" cy="8" r="8" fill="#004E7C" />
-            </svg>
-          </span>
-          <span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="17"
-              height="16"
-              viewBox="0 0 17 16"
-              fill="none"
-            >
-              <circle cx="8.65381" cy="8" r="8" fill="#E77C40" />
-            </svg>
-          </span>
-          <span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="17"
-              height="16"
-              viewBox="0 0 17 16"
-              fill="none"
-            >
-              <circle cx="8.73071" cy="8" r="8" fill="#252B42" />
-            </svg>
-          </span>
-        </p>
+        <div className="product-color">
+          <button className="pro-red"></button>
+          <button className="pro-green"></button>
+          <button className="pro-orange"></button>
+          <button className="pro-black"></button>
+        </div>
         <div className="frame-product">
-          <p>
+          <div className="details">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="17"
@@ -148,8 +108,8 @@ const Post = ({ src }) => {
               />
             </svg>
             <p className="text-frame">22h...</p>
-          </p>
-          <p>
+          </div>
+          <div className="details">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="17"
@@ -163,8 +123,8 @@ const Post = ({ src }) => {
               />
             </svg>
             <p className="text-frame">64 Lessons</p>
-          </p>
-          <p>
+          </div>
+          <div className="details">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="17"
@@ -172,7 +132,7 @@ const Post = ({ src }) => {
               viewBox="0 0 17 16"
               fill="none"
             >
-              <g clip-path="url(#clip0_4930_134)">
+              <g clipPath="url(#clip0_4930_134)">
                 <path
                   d="M16.3333 13.8334H2V0.833415C2 0.741748 1.925 0.666748 1.83333 0.666748H0.666667C0.575 0.666748 0.5 0.741748 0.5 0.833415V15.1667C0.5 15.2584 0.575 15.3334 0.666667 15.3334H16.3333C16.425 15.3334 16.5 15.2584 16.5 15.1667V14.0001C16.5 13.9084 16.425 13.8334 16.3333 13.8334ZM3.5 12.5001H14.6667C14.7583 12.5001 14.8333 12.4251 14.8333 12.3334V3.25008C14.8333 3.10008 14.6521 3.02716 14.5479 3.13133L10.1667 7.51258L7.55417 4.92925C7.52284 4.89823 7.48054 4.88083 7.43646 4.88083C7.39238 4.88083 7.35007 4.89823 7.31875 4.92925L3.38125 8.87925C3.36596 8.89457 3.35385 8.91277 3.34562 8.93279C3.3374 8.95281 3.33322 8.97427 3.33333 8.99591V12.3334C3.33333 12.4251 3.40833 12.5001 3.5 12.5001Z"
                   fill="#004E7C"
@@ -190,7 +150,7 @@ const Post = ({ src }) => {
               </defs>
             </svg>
             <p className="text-frame">Progress</p>
-          </p>
+          </div>
         </div>
         <button className="frame-btn">
           Learn More{" "}
@@ -202,7 +162,7 @@ const Post = ({ src }) => {
             viewBox="0 0 10 16"
             fill="none"
           >
-            <g clip-path="url(#clip0_4930_139)">
+            <g clipPath="url(#clip0_4930_139)">
               <path
                 d="M0.5 13.7143L6.21428 8L0.5 2.28571L1.64286 0L9.64286 8L1.64286 16L0.5 13.7143Z"
                 fill="#B73225"

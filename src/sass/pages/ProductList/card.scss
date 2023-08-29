@@ -1,0 +1,44 @@
+@import "../../utils/variables.scss";
+
+.cardpro {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  font-family: $main-font;
+  padding-left: 50px;
+  height: 300px;
+  
+
+  
+  .card-img {
+    img {
+      width: 80%;
+    }
+  }
+
+  .card-content {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+
+    h5 {
+      color: $secondary-color;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    h1 {
+      color: $primary-color;
+      font-size: 44px;
+      font-weight: 800;
+    }
+
+    p {
+      text-decoration-line: underline;
+      margin-top: 20px;
+    }
+  }
+}
+

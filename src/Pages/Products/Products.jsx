@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "./Card";
 import "../../sass/pages/Products/products.scss";
-import Featured from "./featured";
+
 
 const Products = () => {
   return (
@@ -32,7 +32,7 @@ const Products = () => {
           </div>
         </div>
 
-        <Featured />
+        
       </div>
     </div>
   );

@@ -1,12 +1,12 @@
 @import "../../../utils/variables.scss";
 
-* {
-  font-family: $secondary-font !important;  
-}
+// * {
+//   font-family: $secondary-font !important;
+// }
 .post-cards {
   display: flex;
   margin-top: 100px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 30px;
 }

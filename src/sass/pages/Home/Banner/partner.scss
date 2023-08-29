@@ -1,21 +1,20 @@
-@import '../../../utils/variables.scss';
+@import "../../../utils/variables.scss";
 
-.partner-banner{
-    display: flex;
-    background-color: white;
-    justify-content: center;
-    align-items: center;
-    padding: 100px 0px;
-    gap: 50px
-    ;
-    button{
-        background-color: white;
-        cursor: pointer;
-        
-    }
+.partner-banner {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0px;
+  gap: 100px;
+  margin-top: 120px;
+  button {
+    background: none;
+    cursor: pointer;
+  }
 
-    button:hover{
-        transform: scale(1.1);
-        transition: 0.3s;
-    }
+  button:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
 }

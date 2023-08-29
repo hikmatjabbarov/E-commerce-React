@@ -6,13 +6,16 @@
   justify-content: center;
   height: 142px;
   margin-top: 72px;
+  padding-bottom: 5px;
 }
 
 .social {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 79%;
+  width: 85%;
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 5px;
 
   .social-tag {
     display: flex;
