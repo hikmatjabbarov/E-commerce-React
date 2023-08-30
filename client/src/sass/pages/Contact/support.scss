@@ -1,0 +1,57 @@
+@import "../../utils/variables.scss";
+
+* {
+  font-family: $secondary-color;
+}
+
+.support-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 40px;
+
+  &.dark {
+    background-color: $primary-color;
+    h1 {
+      color: white;
+    }
+    h2 {
+      color: white;
+    }
+    p {
+      color: white;
+    }
+  }
+  &.light {
+    background-color: #fafafa;
+  }
+  &.white {
+    background-color: white;
+  }
+  button {
+    padding: 15px 36px;
+    border-radius: 37px;
+    border: 1px solid #b73225;
+    color: #b73225;
+    font-weight: 700;
+  }
+  img {
+    width: 72px;
+  }
+  gap: 15px;
+  h1 {
+    color: $primary-color;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  h2 {
+    color: $primary-color;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  p {
+    color: $primary-color;
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,89 @@
+@import "../../utils/variables.scss";
+
+.blogstart {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  width: fit-content;
+  margin: 0 auto;
+  * {
+    font-family: $secondary-font !important;
+  }
+  .main-cover {
+    img {
+      width: 380px;
+    }
+  }
+}
+.contentblog {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 25px;
+  .learnmore {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    color: $text-color;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .titleblog {
+    font-size: 20px;
+    font-weight: 400;
+    color: $primary-color;
+    width: 240px;
+    line-height: 30px;
+  }
+  .subtitleblog {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: $text-color;
+    width: 280px;
+  }
+  .blogdetail {
+    display: flex;
+    justify-content: space-between;
+    width: 295px;
+
+    .dateblog {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16px;
+      color: $text-color;
+      display: flex;
+      gap: 5px;
+    }
+    .commentsblog {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16px;
+      color: $text-color;
+      display: flex;
+      gap: 5px;
+    }
+  }
+}
+.webtitle {
+  display: flex;
+  gap: 15px;
+
+  .googletag {
+    color: #8ec2f2;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .trendingtag {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .newtag {
+    font-size: 12px;
+    font-weight: 400;
+  }
+}

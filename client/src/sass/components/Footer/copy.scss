@@ -1,0 +1,19 @@
+@import "../../utils/variables.scss";
+
+.copy {
+  background-color: #fafafa;
+  padding: 35px 115px;
+  &.dark {
+    background-color: $primary-color;
+    .text {
+      color: white;
+    }
+  }
+  &.light {
+    background-color: white;
+  }
+}
+.text {
+  color: $text-color;
+  font-weight: 700;
+}

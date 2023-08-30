@@ -1,0 +1,113 @@
+@import "../../utils/variables.scss";
+
+* {
+  font-family: $main-font !important;
+}
+
+.main-cont {
+  max-width: 90%;
+  margin: 0 auto;
+
+  .support-contact {
+    display: flex;
+  }
+
+  .support-main {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+
+    .title-support {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      text-align: center;
+      gap: 10px;
+      .office {
+        color: $primary-color;
+        font-weight: 700;
+      }
+      .bigideas {
+        color: $primary-color;
+        font-size: 44px;
+        font-weight: 800;
+        line-height: 58px;
+      }
+    }
+  }
+  .contact-card {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+
+    .icon-social {
+      display: flex;
+      align-items: center;
+      gap: 34px;
+    }
+
+    .subtitle-card {
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+
+      .contactus {
+        font-size: 17px;
+        font-weight: 700;
+        color: $primary-color;
+      }
+
+      .intouch {
+        color: $primary-color;
+        font-weight: 800;
+        font-size: 80px;
+        width: 550px;
+      }
+      .willact {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+        width: 360px;
+        color: #737373;
+      }
+      .fax-phone {
+        font-size: 26px;
+        color: $primary-color;
+        line-height: 36px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+.arrow {
+  padding-top: 73px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 50px;
+  h5 {
+    font-size: 17px;
+    font-weight: 700;
+    color: $primary-color;
+  }
+  h1 {
+    color: $primary-color;
+    font-size: 80px;
+    font-weight: 800;
+  }
+  button {
+    color: white;
+    background-color: $secondary-color;
+    padding: 15px 40px;
+    border-radius: 5px;
+  }
+}

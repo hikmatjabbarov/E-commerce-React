@@ -1,0 +1,66 @@
+@import "../../../utils/variables.scss";
+
+.social-container {
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  height: 142px;
+
+  padding-bottom: 5px;
+
+  &.dark {
+    background-color: $primary-color;
+    margin-top: 100px;
+    .social {
+      color: white;
+      .logo-icon {
+        a {
+          color: #fff !important;
+        }
+      }
+    }
+  }
+  &.light {
+    background-color: #fafafa;
+    margin-top: 74px;
+  }
+  &.white {
+    background-color: white;
+  }
+  &.dark2 {
+    background-color: $primary-color;
+    .social {
+      color: white;
+      .logo-icon {
+        a {
+          color: #fff !important;
+        }
+      }
+    }
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 5px;
+
+  .social-tag {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .social-btn {
+      cursor: pointer;
+      background: none;
+    }
+
+    .social-btn:hover {
+      transform: scale(1.1);
+      transition: 0.5s;
+    }
+  }
+}

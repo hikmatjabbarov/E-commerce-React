@@ -1,0 +1,130 @@
+@import "../../utils/variables.scss";
+
+.signup {
+  width: 90%;
+  margin: 0 auto;
+
+  .signmain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 100px;
+    * {
+      font-family: $secondary-font !important;
+    }
+    .titlefree {
+      display: flex;
+      flex-direction: column;
+      width: 435px;
+      gap: 15px;
+      justify-content: center;
+      align-items: center;
+      .free {
+        font-size: 40px;
+        font-weight: 700;
+        color: $primary-color;
+      }
+
+      .try {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        color: #737373;
+        text-align: center;
+        width: 400px;
+      }
+    }
+  }
+  .fb-back {
+    background-color: #2a7cc7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: white;
+    width: 405px;
+    padding: 15px 25px;
+    gap: 15px;
+    font-weight: 700;
+  }
+
+  .componentinput {
+    padding: 40px;
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    .inputs {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      justify-content: center;
+      h2 {
+        color: $primary-color;
+      }
+      input {
+        width: 429px;
+        height: 50px;
+        padding-left: 21px;
+        border-radius: 5px;
+        border: 1px solid #e6e6e6;
+        background: #f9f9f9;
+      }
+      ::placeholder {
+        color: #737373;
+      }
+    }
+
+    .privacy {
+      width: 435px;
+      font-size: 12px;
+      line-height: 16px;
+      color: #737373;
+    }
+
+    .started {
+      padding: 15px 40px;
+      background-color: #2dc071;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      button {
+        background: none;
+        color: white;
+        font-weight: 700;
+        cursor: pointer;
+      }
+    }
+
+    .already {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      button {
+        background: none;
+        font-weight: 700;
+        color: $secondary-color;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .inputoption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    .orname {
+      color: #737373;
+    }
+
+    .lineror {
+      border-bottom: 2px solid #ececec;
+      width: 120px;
+    }
+  }
+}
