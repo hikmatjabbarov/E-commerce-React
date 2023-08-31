@@ -1,0 +1,102 @@
+@import "../../utils/variables.scss";
+.innovation {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  gap: 20px;
+  .learnwith {
+    font-size: 17px;
+    color: $text-color;
+  }
+  .learnblog {
+    font-size: 44px;
+    font-weight: 800;
+    color: $primary-color;
+  }
+  .title-tag {
+    display: flex;
+    gap: 10px;
+    .title-home {
+      a {
+        color: $primary-color;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.team-imgs {
+  display: flex;
+  gap: 9px;
+  .team1 {
+    width: 700px;
+    height: 530px;
+  }
+  .team-second {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    .team2 {
+      width: 400px;
+      height: 260px;
+    }
+  }
+}
+
+.memberize {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 100px;
+}
+.team-content {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  padding-top: 112px;
+  padding-bottom: 112px;
+  gap: 10px;
+
+  h1 {
+    font-family: $secondary-font !important;
+    font-size: 40px;
+    color: $primary-color;
+  }
+}
+.trial {
+  padding-top: 150px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 80px;
+
+  p {
+    width: 410px;
+    text-align: center;
+    color: #737373;
+  }
+
+  h1 {
+    color: $primary-color;
+    font-size: 44px;
+    font-weight: 800;
+  }
+  button {
+    color: white;
+    background-color: $secondary-color;
+    padding: 15px 40px;
+    border-radius: 5px;
+  }
+  .sc-ico {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 34px;
+  }
+}

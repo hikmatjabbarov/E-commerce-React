@@ -1,5 +1,6 @@
 import React from "react";
 import "../../sass/components/Footer/footer.scss";
+import { Link } from "react-router-dom";
 
 const Footer = ({ className }) => {
   return (
@@ -8,19 +9,35 @@ const Footer = ({ className }) => {
         <div className="footer-content">
           <h1>Company Info</h1>
           <ul>
-            <li>About Us </li>
+            <li>
+              <Link to="/about" style={{ textDecoration: "none" }}>
+                About Us
+              </Link>
+            </li>
             <li>Carrier</li>
             <li>We are hiring</li>
-            <li>Blog</li>
+            <li>
+              <Link to="/blog" style={{ textDecoration: "none" }}>
+                Blog
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="footer-content">
           <h1>Legal</h1>
           <ul>
-            <li>About Us </li>
+            <li>FAQ </li>
             <li>Carrier</li>
-            <li>We are hiring</li>
-            <li>Blog</li>
+            <li>
+              <Link to="/team" style={{ textDecoration: "none" }}>
+                Team
+              </Link>
+            </li>
+            <li>
+              <Link to="/blog" style={{ textDecoration: "none" }}>
+                Blog
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="footer-content">

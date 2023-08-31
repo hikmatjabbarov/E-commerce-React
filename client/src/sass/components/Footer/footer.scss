@@ -77,6 +77,9 @@
       ul {
         li {
           color: white;
+          a {
+            color: white;
+          }
         }
       }
     }
@@ -84,4 +87,9 @@
   &.light {
     background-color: white;
   }
+}
+
+a {
+  text-decoration: none;
+  color: $text-color;
 }
