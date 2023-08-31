@@ -1,0 +1,138 @@
+@import "../../utils/variables.scss";
+.artmain {
+  background-color: $primary-color;
+  .article-title {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 120px;
+    gap: 16px;
+    .learnwith {
+      font-size: 20px;
+      color: white;
+      font-weight: 400;
+    }
+    .learnblog {
+      font-size: 44px;
+      font-weight: 800;
+      color: white;
+    }
+    .title-tag {
+      display: flex;
+      gap: 10px;
+      padding-bottom: 16px;
+    }
+  }
+}
+.content-blog {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 80px;
+  .img-cont {
+    img {
+      width: 711px;
+      height: 437px;
+    }
+  }
+
+  .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 711px;
+    gap: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    h1 {
+      font-family: $secondary-font !important;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 36px;
+    }
+    p {
+      color: $primary-color;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+    }
+  }
+  .text-contenlast {
+    border-bottom: 1px solid #cecece;
+    border-top: 1px solid #cecece;
+    padding-top: 43px;
+    padding-bottom: 43px;
+    width: 711px;
+    p {
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 36px;
+      color: $primary-color;
+      font-family: $secondary-font !important;
+      width: 700px;
+    }
+  }
+}
+
+.member-content {
+  background-color: #fafafa;
+  padding: 80px 80px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .member-img {
+    img {
+      width: 245px;
+      height: 246px;
+      border-radius: 50%;
+    }
+  }
+  .member-id {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    h1 {
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 32px;
+      font-family: $secondary-font !important;
+    }
+    p {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+      font-family: $secondary-font !important;
+      color: $text-color;
+      width: 750px;
+    }
+  }
+}
+
+.featured-blog {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 112px;
+  padding-bottom: 80px;
+  gap: 16px;
+
+  .learnblog {
+    font-size: 44px;
+    font-weight: 800;
+    color: $primary-color;
+  }
+}

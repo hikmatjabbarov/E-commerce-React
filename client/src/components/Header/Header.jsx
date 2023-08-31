@@ -3,9 +3,9 @@ import { Logo } from "../Logo/Logo";
 import "../../sass/components/Header/header.scss";
 import { Link } from "react-router-dom";
 
-const Header = ({ variant }) => {
+const Header = ({ variant, className }) => {
   return (
-    <div className="header-first   ">
+    <div className={`header-first ${className}`}>
       <div className=" header-second   ">
         <Logo />
         {variant === "primary" && (

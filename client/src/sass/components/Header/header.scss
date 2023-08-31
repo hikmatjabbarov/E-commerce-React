@@ -6,8 +6,20 @@
 
 .header-first {
   display: flex;
-  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   justify-content: center;
+
+  &.dark {
+    background-color: $primary-color;
+    .header-second {
+      display: flex;
+      align-items: center;
+    }
+    a {
+      color: white !important;
+    }
+  }
 }
 nav {
   display: flex;
