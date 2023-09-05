@@ -26,7 +26,11 @@ const Footer = ({ className }) => {
         <div className="footer-content">
           <h1>Legal</h1>
           <ul>
-            <li>FAQ </li>
+            <li>
+              <Link to="/contact/faq" style={{ textDecoration: "none" }}>
+                FAQ
+              </Link>
+            </li>
             <li>Carrier</li>
             <li>
               <Link to="/team" style={{ textDecoration: "none" }}>

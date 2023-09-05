@@ -10,6 +10,7 @@ import About from "./Pages/About/About";
 import Blog from "./Pages/Blog/Blog";
 import Team from "./Pages/Team/Team";
 import Article from "./Pages/Article/Article";
+import FAQ from "./Pages/Article/FAQ";
 const App = () => {
   return (
     <div>
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/blog" element={<Blog />} />
         <Route path="/team" element={<Team />} />
         <Route path="/blog/content" element={<Article />} />
+        <Route path="/contact/faq" element={<FAQ />} />
       </Routes>
     </div>
   );

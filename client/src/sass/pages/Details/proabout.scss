@@ -51,17 +51,85 @@
     .onedesc {
       font-weight: 600;
       color: $text-color;
+      position: relative;
+      z-index: 22;
+      &:after {
+        content: "";
+        height: 4px;
+        background-color: #cfe6f4;
+        opacity: 0.9;
+        width: 0;
+        display: block;
+        position: absolute;
+        bottom: -4px;
+        left: -8px;
+        z-index: 1;
+        transition: width 0.4s ease-in-out 80ms;
+      }
+      &:hover {
+        cursor: pointer;
+        &:after {
+          width: 100px;
+          z-index: -1;
+        }
+      }
     }
+
     .seconddesc {
       font-weight: 400;
       color: $text-color;
+      position: relative;
+      z-index: 22;
+      &:after {
+        content: "";
+        height: 4px;
+        background-color: #cfe6f4;
+        opacity: 0.9;
+        width: 0;
+        display: block;
+        position: absolute;
+        bottom: -4px;
+        left: -8px;
+        z-index: 1;
+        transition: width 0.4s ease-in-out 80ms;
+      }
+      &:hover {
+        cursor: pointer;
+        &:after {
+          width: 180px;
+          z-index: -1;
+        }
+      }
     }
+
     .thirddesc {
       font-weight: 400;
       color: $text-color;
+      position: relative;
+      z-index: 22;
       span {
         color: #004e7c;
         font-weight: 400;
+      }
+      &:after {
+        content: "";
+        height: 4px;
+        background-color: #cfe6f4;
+        opacity: 0.9;
+        width: 0;
+        display: block;
+        position: absolute;
+        bottom: -4px;
+        left: -8px;
+        z-index: 1;
+        transition: width 0.4s ease-in-out 80ms;
+      }
+      &:hover {
+        cursor: pointer;
+        &:after {
+          width: 100px;
+          z-index: -1;
+        }
       }
     }
   }

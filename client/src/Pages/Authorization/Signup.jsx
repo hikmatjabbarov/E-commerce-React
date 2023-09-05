@@ -1,13 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../sass/pages/Authorization/signup.scss";
 import Facebook from "../../assets/facebook.svg";
 import Header from "../../components/Header/Header";
 import Social from "../../Pages/Home/Banner/Social";
 import Footer from "../../components/Footer/Footer";
 import Copy from "../../components/Footer/Copy";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
+import visibilityOn from "../../assets/visibility-on.png";
+import visibilityOff from "../../assets/visibility-off.png";
+
+const initialUser = { email: "", password: "", username: "" };
 
 const Signup = () => {
+  const [user, setUser] = useState(initialUser);
+  const navigate = useNavigate();
+  const [visibleOn, setVisibleOn] = useState(false);
+  const handleuserChange = ({ target }) => {
+    const { name, value } = target;
+    setUser((currentUser) => ({
+      ...currentUser,
+      [name]: value,
+    }));
+  };
+
+  const Register = async () => {
+    try {
+      const url = `${
+        import.meta.env.VITE_APP_STRAPI_BASE_URL
+      }/api/auth/local/register`;
+      if (user.username && user.email && user.password) {
+        const res = await axios.post(url, user);
+        if (!!res) {
+          setUser(initialUser);
+          navigate("/login");
+        }
+      }
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
+
   return (
     <div className="signupcont">
       <div className="signup">
@@ -30,21 +63,50 @@ const Signup = () => {
               <div className="orname">OR</div>
               <div className="lineror"></div>
             </div>
-            <div className="inputs">
+            <form
+              className="form-comp"
+              onSubmit={(e) => {
+                e.preventDefault();
+                Register();
+              }}
+            >
               <h2>Name *</h2>
-              <input type="text" placeholder="Full Name * " />
-            </div>
-            <div className="inputs">
-              <h2>*Email address *</h2>
-              <input type="email" placeholder="example@gmail.com" />
-            </div>
-            <div className="inputs">
+              <input
+                type="text"
+                placeholder="Full Name *"
+                value={user.username}
+                onChange={handleuserChange}
+                name="username"
+              />
+              <h2>*Email address</h2>
+              <input
+                type="email"
+                placeholder="example@gmail.com"
+                value={user.email}
+                onChange={handleuserChange}
+                name="email"
+              />
               <h2>Password *</h2>
-              <input type="password" placeholder="Password" />
-            </div>
-            <div className="started">
-              <button>Get Started</button>
-            </div>
+              <input
+                type="password"
+                placeholder="Password"
+                value={user.password}
+                onChange={handleuserChange}
+                name="password"
+              />
+              <div className="started">
+                <button>Get Started</button>
+                {
+                  <img
+                    className="visible-photo"
+                    onClick={() => setVisibleOn(!visibleOn)}
+                    src={!visibleOn ? visibilityOn : visibilityOff}
+                    alt=""
+                  />
+                }
+              </div>
+            </form>
+
             <div className="privacy">
               By filling in the form above and clicking the “Get Started”
               button, you accept and agree to Terms of Service and Privacy

@@ -14,6 +14,7 @@ import Arrow from "../../assets/arrow.svg";
 import Social from "../../Pages/Home/Banner/Social";
 import Footer from "../../components/Footer/Footer";
 import Copy from "../../components/Footer/Copy";
+import { Link } from "react-router-dom";
 const Contact = () => {
   return (
     <div className="contact">
@@ -58,7 +59,9 @@ const Contact = () => {
           <img src={Arrow} alt="arrow" />
           <h5>WE Can't WAIT TO MEET YOU</h5>
           <h1>Let’s Talk</h1>
-          <button>Try it free now</button>
+          <button>
+            <Link to={"/contact/faq"} > Try it free now</Link>
+          </button>
         </div>
       </div>
       <Social className={"white"} />

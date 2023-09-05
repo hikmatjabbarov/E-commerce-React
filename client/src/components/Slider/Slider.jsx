@@ -2,11 +2,9 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./Slider.scss";
-import Singleimg from "../../assets/singleimg.png";
+import "../Slider/Slider.scss";
 
-const SliderSelect = ({images}) => {
-
+const SliderSelect = ({ images }) => {
   const settings = {
     customPaging: function (i) {
       return (
