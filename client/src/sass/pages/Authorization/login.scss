@@ -137,3 +137,15 @@
     }
   }
 }
+.password-login {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.visible-login {
+  cursor: pointer;
+  position: absolute;
+  top: 60%;
+  right: 16px;
+}

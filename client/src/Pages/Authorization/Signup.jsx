@@ -86,24 +86,26 @@ const Signup = () => {
                 onChange={handleuserChange}
                 name="email"
               />
-              <h2>Password *</h2>
-              <input
-                type="password"
-                placeholder="Password"
-                value={user.password}
-                onChange={handleuserChange}
-                name="password"
-              />
-              <div className="started">
-                <button>Get Started</button>
+              <div className="password-sign">
+                <h2>Password *</h2>
+                <input
+                  type={visibleOn ? "text" : "password"}
+                  placeholder="Password"
+                  value={user.password}
+                  onChange={handleuserChange}
+                  name="password"
+                />
                 {
                   <img
-                    className="visible-photo"
+                    className="visible-sign"
                     onClick={() => setVisibleOn(!visibleOn)}
                     src={!visibleOn ? visibilityOn : visibilityOff}
                     alt=""
                   />
                 }
+              </div>
+              <div className="started">
+                <button>Get Started</button>
               </div>
             </form>
 

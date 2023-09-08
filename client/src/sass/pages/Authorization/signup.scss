@@ -61,10 +61,10 @@
       flex-direction: column;
       gap: 24px;
       justify-content: center;
-      .visible-photo {
+      .visible-sign {
         cursor: pointer;
         position: absolute;
-        top: 60%;
+        top: 71%;
         right: 16px;
       }
       h2 {
@@ -134,4 +134,10 @@
       width: 120px;
     }
   }
+}
+
+.password-sign {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../../sass/pages/Authorization/login.scss";
 import Facebook from "../../assets/facebook.svg";
 import Header from "../../components/Header/Header";
 import Social from "../Home/Banner/Social";
@@ -78,24 +79,26 @@ const Signin = () => {
                 value={user.identifier}
                 onChange={handleChange}
               />
-              <h2>*Password </h2>
-              <input
-                type={visibleOn ? "text" : "password"}
-                placeholder="Password"
-                name="password"
-                value={user.password}
-                onChange={handleChange}
-              />
-              <div className="started">
-                <button>Get Started</button>
+              <div className="password-login">
+                <h2>*Password </h2>
+                <input
+                  type={visibleOn ? "text" : "password"}
+                  placeholder="Password"
+                  name="password"
+                  value={user.password}
+                  onChange={handleChange}
+                />
                 {
                   <img
-                    className="visible-photo"
+                    className="visible-login"
                     onClick={() => setVisibleOn(!visibleOn)}
                     src={!visibleOn ? visibilityOn : visibilityOff}
                     alt=""
                   />
                 }
+              </div>
+              <div className="started">
+                <button>Get Started</button>
               </div>
             </form>
 
